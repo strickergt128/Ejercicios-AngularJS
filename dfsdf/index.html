@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html ng-app="MyFirstApp">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body ng-controller = "FirstController">
+    <input type="text" ng-model = "nombre">
+    <input type="text" ng-model = "apellido">
+    <input type="text" ng-model = "correo">
+    <input type="text" ng-model = "password">
+    <button type="button" ng-click="guardar()">Guardar</button>
+    <br>
+    <input type="text" ng-model = "us">
+    <button type="button" ng-click="ver()">Verificar</button>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyASEm5PpkIsjz4Be2qiIIWywQLM_cpU2xM",
+        authDomain: "nuevoproyecto-14b42.firebaseapp.com",
+        databaseURL: "https://nuevoproyecto-14b42.firebaseio.com",
+        projectId: "nuevoproyecto-14b42",
+        storageBucket: "nuevoproyecto-14b42.appspot.com",
+        messagingSenderId: "145218237927"
+      };
+      firebase.initializeApp(config);
+    </script>
+  </body>
+</html>
